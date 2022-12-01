@@ -12,5 +12,11 @@ Creating a mob spawning mechanic in unity utilizing object pooling methods. Insp
 ## Wave Spawner
 
 - Allows the user to add or remove waves into the game without coding. Making it easy for level desginers to manage the wave spawning mehcnaics.
-- Can deternube the number of enemies per wave.
+- Can determine the location of where enemy can spawn. The enemy will spawn in random location of the spawners if there are multiple spawners.
+- Can deternube the number of enemies per wave within the object pooling.
 - Can determine duration between each wave when all the enemy is defeated.
+- All this is managed by the object pooling class so that the total enemy cannot be greater than the object pool itself. To prevent from spawning too many enemy at once.
+
+## Player Object
+
+- A simple shape for the player with simple movement so that the enemy can have a target to aim.
